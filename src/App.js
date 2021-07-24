@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import React from 'react'
+import ProfileCard from './components/ProfileCard'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // bem naming convention
+    <div classNmae='app'>
+      <div className='app_bg_pattern_top'></div>
+      <div className='app_bg_pattern_bottom'></div>
+      <ProfileCard
+            name='Jordan type'
+            age='26'
+            city='Nairobi'
+            followers='80K'
+            likes='803K'
+            photos='1.4K'></ProfileCard>
     </div>
   );
 }
